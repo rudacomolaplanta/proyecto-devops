@@ -21,11 +21,11 @@ pipeline {
                         sh 'npm test'
                     }
                 }
-                stage('run'){
-                    steps {
-                        sh 'node dist/index.js'
-                    }
-                }
+                //stage('run'){
+                //    steps {
+                //        sh 'node dist/index.js'
+                //    }
+                //}
             }
         }
     }
