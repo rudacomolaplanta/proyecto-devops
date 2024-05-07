@@ -1,6 +1,12 @@
-name: proyecto-devops
+name: andres-ruda
 services:
-   backend:
-     image: 
+   andres-ruda:
+     image: localhost:8082/andres-ruda:latest
+     restart: always
+     ports:
+       - "8080:8080"
      environment:
+      - API_KEY=/app/secrets/api_key 
+      - AMBIENTE=Development
      secrets:
+      - api_key
